@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Your Name - Publications</title>
+  <title>Yuefei Chen - Homepage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -11,94 +11,160 @@
     <!-- 左侧栏 -->
     <aside class="sidebar">
       <div class="sidebar-inner">
-        <!-- 头像，如果暂时没有可以删掉 -->
+        <!-- 头像（没有可以先删掉这一块） -->
         <div class="avatar-wrapper">
-          <img src="img/profile.jpg" alt="Your Name" class="avatar" />
+          <img src="photo.jpg" alt="Your Name" class="avatar" />
         </div>
 
-        <h1 class="name">Your Name</h1>
+        <h1 class="name">Yuefei Chen</h1>
         <div class="title">
           PhD Candidate<br />
-          Department of XXX<br />
-          Your University
+          Department of Management Science and Information Systems<br />
+          Rutgers University
         </div>
 
         <div class="contact">
-          <p><strong>Email:</strong> yourname@xxx.edu</p>
+          <p><b>Email:</b>yc1023@business.rutgers.edu</p>
         </div>
 
         <div class="links">
-          <a href="https://scholar.google.com/..." target="_blank">Google Scholar</a><br />
-          <a href="https://dblp.org/..." target="_blank">DBLP</a><br />
-          <a href="https://github.com/yourname" target="_blank">GitHub</a><br />
-          <a href="https://www.linkedin.com/in/yourname" target="_blank">LinkedIn</a>
+          <a href="https://scholar.google.com/citations?user=3SjwDFEAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a><br />
+          <a href="https://github.com/AZHENHETU" target="_blank">GitHub</a><br />
+          <a href="https://www.linkedin.com/in/yuefei-c-729b8716b/" target="_blank">LinkedIn</a>
         </div>
 
+        <!-- 单页导航：用锚点跳转到同一页的 section -->
         <nav class="sidebar-nav">
-          <a href="index.html">Home</a>
-          <a href="publication.html">Publications</a>
-          <a href="teaching.html">Teaching</a>
-          <a href="awards.html">Awards</a>
-          <a href="service.html">Service</a>
+          <a href="#home">Home</a>
+          <a href="#publications">Publications</a>
+          <a href="#teaching">Teaching</a>
+
+          <a href="#service">Service</a>
+          <a href="#awards">Awards</a>
         </nav>
       </div>
     </aside>
 
-    <!-- 右侧正文 -->
+    <!-- 右侧内容 -->
     <main class="content">
-      <h2 id="preprints">Preprints</h2>
-      <ol class="pub-list">
-        <li>
-          <span class="pub-title">CounterBench: A Benchmark for Counterfactual Reasoning in Large Language Models</span>
-          <br />
-          <span class="pub-authors"><strong>Your Name</strong>, Coauthor A, Coauthor B</span>
-          <br />
-          <span class="pub-venue">arXiv, 2025</span>
-          <br />
-          <a href="https://arxiv.org/abs/xxxx.xxxxx" target="_blank">[PDF]</a>
-          <!-- <a href="https://github.com/xxx" target="_blank">[Code]</a> -->
-        </li>
-        <!-- 再加更多 <li> ... </li> -->
-      </ol>
+      <!-- Home / About -->
+      <section id="home" class="section">
+        <h2>About Me</h2>
+        <p>
+          I am a PhD candidate in Information Technology at Rutgers University (MSIS Department), holding a Master's degree in Statistics from Columbia University. 
+          My research focuses on advancing the causal inference capabilities of large language models (LLMs), with an emphasis on building interpretable, transparent, 
+          and reliable systems that move not only on pattern matching but intervention-based and counterfactual reasoning.
+          
+        <p>
+          Integrating my backgrounds in computer science, statistics, and business analytics, 
+          I apply AI and causal methods to examine complex business phenomena,such as managerial decision-making, stock price dynamics, and customer behavior modeling. 
+          My goal is to develop technically rigorous yet practically impactful AI systems that support data-driven decision-making in modern enterprises.
+        </p>
+          
+        
+      </section>
+      
+      <!-- Publications -->
+      <section id="publications" class="section">
+        <h2>Publications</h2>
 
-      <h2 id="journals">Journals</h2>
-      <ol class="pub-list">
-        <li>
-          <span class="pub-title">Title of Journal Paper</span>
-          <br />
-          <span class="pub-authors"><strong>Your Name</strong>, Coauthor A, Coauthor B</span>
-          <br />
-          <span class="pub-venue">Journal Name (JOURNAL), 2024</span>
-          <br />
-          <a href="https://doi.org/xxxx" target="_blank">[PDF]</a>
-        </li>
-      </ol>
+        <h3>Preprints</h3>
+        <ol class="pub-list">
+          <li>
+            <span class="pub-title">
+              "CounterVQA: Evaluating and Improving Counterfactual Reasoning in Vision-Language Models for Video Understanding"
+            </span><br />
+            <span class="pub-authors">
+              <b>Yuefei Chen</b>, Jiang Liu, Xiaodong Lin, Ruixiang Tang. 
+            </span><br />
+            <span class="pub-venue">arXiv, 2025</span><br />
+            <a href="https://arxiv.org/abs/2511.19923" target="_blank">[PDF]</a>
+            <!-- <a href="https://github.com/xxx" target="_blank">[Code]</a> -->
+          </li>
+        </ol>
 
-      <h2 id="conferences">Conferences</h2>
-      <ol class="pub-list">
-        <li>
-          <span class="pub-title">Title of Conference Paper</span>
-          <br />
-          <span class="pub-authors"><strong>Your Name</strong>, Coauthor A, Coauthor B</span>
-          <br />
-          <span class="pub-venue">Conference Name (CONF), 2023</span>
-          <br />
-          <a href="https://arxiv.org/..." target="_blank">[PDF]</a>
-        </li>
-      </ol>
+        <h3>Journals</h3>
+        <ol class="pub-list">
+          <li>
+            <span class="pub-title">ForETaxi: data-driven fleet-oriented charging resource allocation in large-scale electric taxi networks</span><br />
+            <span class="pub-authors">
+              Guang Wang, <b>Yuefei Chen</b>, Shuai Wang, Fan Zhang, Desheng Zhang
+            </span><br />
+            <span class="pub-venue">ACM Transactions on Sensor Networks, 2023</span><br />
+            <a href="https://dl.acm.org/doi/full/10.1145/3570958" target="_blank">[PDF]</a>
+          </li>
+        </ol>
 
-      <h2 id="others">Book Chapters / Tutorials / Others</h2>
-      <ol class="pub-list">
-        <li>
-          <span class="pub-title">Title of Book Chapter</span>
-          <br />
-          <span class="pub-authors"><strong>Your Name</strong>, Coauthor A</span>
-          <br />
-          <span class="pub-venue">In: Book Name, 2022</span>
-          <br />
-          <a href="https://link.springer.com/..." target="_blank">[PDF]</a>
-        </li>
-      </ol>
+        <h3>Conferences</h3>
+        <ol class="pub-list">
+          <li>
+            <span class="pub-title">Counterbench: A benchmark for counterfactuals reasoning in large language models</span><br />
+            <span class="pub-authors">
+              <b>Yuefei Chen</b>, Vivek K Singh, Jing Ma, Ruxiang Tang
+            </span><br />
+            <span class="pub-venue">AAAI Conference on Artificial Intelligence (AAAI), 2026 </span><br />
+            <a href="https://arxiv.org/abs/2502.11008" target="_blank">[PDF]</a>
+          </li>
+          <li>
+            <span class="pub-title">A Bidirectional Encoder Representations from Transformers and CNN Based Prediction Model on Competitive Products</span><br />
+            <span class="pub-authors">
+              <b>Yuefei Chen</b>, Xinzhe Wang
+            </span><br />
+            <span class="pub-venue">Science And Information Conference, 2023</span><br />
+            <a href="https://dl.acm.org/doi/full/10.1145/3570958" target="_blank">[PDF]</a>
+          </li>
+          <li>
+            <span class="pub-title">A neural network model of the nba most valued player selection prediction</span><br />
+            <span class="pub-authors">
+              <b>Yuefei Chen</b>, Junyan Dai, Changjiang Zhang
+            </span><br />
+            <span class="pub-venue">International Conference on Pattern Recognition and Artificial Intelligence (2019)</span><br />
+            <a href="https://dl.acm.org/doi/abs/10.1145/3357777.3357786" target="_blank">[PDF]</a>
+          </li>
+          <li>
+            <span class="pub-title">A novel word cloud graph system design for movie comments</span><br />
+            <span class="pub-authors">
+              Tianshu Li, <b>Yuefei Chen</b>, Changjiang Zhang
+            </span><br />
+            <span class="pub-venue">International Conference on Cloud Computing, Big Data and Blockchain (2018)</span><br />
+            <a href="https://ieeexplore.ieee.org/abstract/document/8756457" target="_blank">[PDF]</a>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Teaching -->
+      <section id="teaching" class="section">
+        <h2>Teaching</h2>
+        <ul class="item-list">
+          <li>
+            <b>Teaching Assistant</b>, Information System Security, Rutgers University, Fall 2025.<br>
+            <b>Teaching Assistant</b>, Data Mining, Rutgers University, Fall 2025.<br>
+            <b>Teaching Assistant</b>, AI methods with Neural Networks and Deep Learning, Rutgers University, Spring 2025.<br>
+            <b>Teaching Assistant</b>, Business Data Management, Rutgers University, Fall 2024.<br>
+            <b>Teaching Assistant</b>, Information System Security, Rutgers University, Fall 2024.<br>
+            <b>Teaching Assistant</b>, Data Mining, Rutgers University, Spring 2024.<br>
+            <b>Teaching Assistant</b>, Data Mining, Rutgers University, Fall 2023.<br>
+            <b>Teaching Assistant</b>, Data Structures and Algorithms, Rutgers University, Fall 2023.<br>
+        </ul>
+      </section>
+
+      <!-- Service -->
+      <section id="service" class="section">
+        <h2>Service</h2>
+        <ul class="item-list">
+          <li>Conference Reviewer for AAAI, COLM.</li>
+          <li>Journal Reviewer for Human-centric Computing and Information Sciences, Smart Health</li>
+        </ul>
+      </section>
+
+      <!-- Awards -->
+      <section id="awards" class="section">
+        <h2>Awards</h2>
+        <ul class="item-list">
+          <li>Summer Ph.D. Research Assistants Scholarships (2025)</li>
+          <li>Summer Ph.D. Research Assistants Scholarships (2024)</li>
+        </ul>
+      </section>
     </main>
   </div>
 </body>
