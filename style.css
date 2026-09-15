@@ -1,3 +1,8 @@
+/* 平滑滚动，让点击侧边导航时滚动更顺滑 */
+html {
+  scroll-behavior: smooth;
+}
+
 /* 全局样式 */
 * {
   box-sizing: border-box;
@@ -42,6 +47,7 @@ a:hover {
   top: 0;
 }
 
+/* 头像 */
 .avatar-wrapper {
   text-align: center;
   margin-bottom: 16px;
@@ -55,6 +61,7 @@ a:hover {
   border: 2px solid #e0e0e0;
 }
 
+/* 左侧文字信息 */
 .name {
   font-size: 1.4rem;
   margin: 0 0 4px;
@@ -78,6 +85,7 @@ a:hover {
   margin-bottom: 16px;
 }
 
+/* 左侧导航：单页锚点 */
 .sidebar-nav {
   border-top: 1px solid #e0e0e0;
   padding-top: 12px;
@@ -97,7 +105,12 @@ a:hover {
   padding: 32px 32px 40px;
 }
 
-.content h2 {
+/* 各 section */
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
   margin-top: 0;
   border-bottom: 2px solid #eee;
   padding-bottom: 4px;
@@ -127,7 +140,16 @@ a:hover {
   color: #555;
 }
 
-/* 自适应：手机上 sidebar 上下堆叠 */
+/* Teaching / Service / Awards 列表 */
+.item-list {
+  padding-left: 20px;
+}
+
+.item-list li {
+  margin-bottom: 8px;
+}
+
+/* 自适应：手机上 sidebar 在上方 */
 @media (max-width: 800px) {
   .page-container {
     flex-direction: column;
@@ -148,7 +170,8 @@ a:hover {
     padding: 20px 16px 32px;
   }
 
-  .pub-list {
+  .pub-list,
+  .item-list {
     padding-left: 16px;
   }
 }
